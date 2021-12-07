@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>International Space Station</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <div id="map"></div>
+    <div class="latitude-container">
+      <h1 class="lat">Latitude</h1>
+      <p id="latitude"></p>
+    </div>
+
+    <div class="longitude-container">
+      <h2 class="lng">Longitude</h2>
+      <p id="longitude"></p>
+    </div>
+    <script src="main.js"></script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=MY_GOOGLE_KEY&callback=initMap&v=weekly"
+      async
+    ></script>
+  </body>
+</html>

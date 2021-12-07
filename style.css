@@ -1,0 +1,48 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+  height: 73%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 20px;
+  /* background-color: #f0f7f0; */
+  background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/iss066e023536.jpg");
+  background-repeat: no-repeat;
+}
+
+p {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+.lat {
+  text-align: center;
+  color: white;
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.lng {
+  text-align: center;
+  color: white;
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.latitude-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.longitude-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
